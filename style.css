@@ -1,11 +1,31 @@
+@charset "UTF-8";
+/*
+Theme Name: Sam Higgins Theme
+Theme URI: http;//joehiggins.me
+Author: Joe Higgins
+Author URI: http://joehiggins.me
+Description: A theme designed with a parallax layout
+
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: samhiggins-theme
+Tags: parallax
+
+This theme is licensed under the GPL.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
 /* Updated 2/3/19 */
 
 
 /* parallax.css */
-@import url("meyer_reset.css");
-@import url("normalize_extract.css");
+@import url("css/meyer_reset.css");
+@import url("css/normalize_extract.css");
 
-@import url("typo.css");
+@import url("css/typo.css");
 
 *, html, body {
   background-color: transparent;
