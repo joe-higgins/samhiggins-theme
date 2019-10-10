@@ -1,0 +1,428 @@
+/* Updated 2/3/19 */
+
+
+/* parallax.css */
+@import url("meyer_reset.css");
+@import url("normalize_extract.css");
+
+@import url("typo.css");
+
+*, html, body {
+  background-color: transparent;
+}
+html {
+
+}
+html, body {
+  /* height: 100%; */
+
+}
+body {
+  font-family: 'Josefin Sans', 'Arial' , sans-serif;
+}
+/* ==============  TYPOGRAPHY ==============  */
+p, li {
+  line-height: 1.8;
+  padding: 1em;
+}
+a {
+  color: black;
+  text-decoration: none;
+  transition: 1s;
+}
+a:hover, ul>li>a:hover {
+  color: rgb(124, 3, 15);
+  text-decoration: none;
+  transition: 1s;
+}
+img {
+  max-width:100%;
+  max-height:100%;
+}
+a .uk-button {
+    z-index: 99;
+}
+em {
+  color: inherit !important;
+}
+#header  {
+  position: fixed;
+  z-index: 3;
+  display: grid;
+  grid-template-columns: 15% 85%;
+
+  top: 0;
+  min-width: 100%;
+  height: 120px;
+  /* padding: 3% 0 0 0; */
+  margin:  auto 0;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+65,ffffff+100&0.76+0,0.52+65,0+100 */
+  background: -moz-linear-gradient(top, rgba(255,255,255,0.76) 0%, rgba(255,255,255,0.52) 65%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(255,255,255,0.76) 0%,rgba(255,255,255,0.52) 65%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(255,255,255,0.76) 0%,rgba(255,255,255,0.52) 65%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c2ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+#logo, #navbar {
+  display: inline-block;
+  vertical-align: middle;
+
+}
+#logo {
+  position: relative;
+  z-index: 4
+  float: left;
+  margin: .5em 3em;
+  width: 80px;
+  /* height: 110px; */
+  float: left;
+  object-fit: cover;
+  animation-duration: 2s;
+}
+#navbar  { /* needs work  maybe a bootstrap navbar? */
+  position: relative;
+  z-index: 4;
+  float: left;
+  /* min-width: 79%; */
+}
+a#mobile-menu-link {
+  position: relative;
+  z-index: 5;
+  display: none;
+}
+/* #mobile-menu {
+  display: none;
+} */
+.nav {
+  margin: 0 0 0 2em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+.nav li {
+  /* font-size: 1.4em; */
+  padding: 2em 0;
+  flex: 1;
+}
+.uk-nav>li>a {
+display: block;
+float: left;
+padding: 5px 0;
+text-transform: uppercase;
+}
+ #social-icons  {
+   padding: 0 2em 0 0;
+ }
+.uk-active a {
+  color: rgb(124, 3, 15);
+  text-decoration: underline !important;
+}
+.uk-parent {
+  text-transform: capitalize;
+}
+.uk-dropdown  {
+  min-width: 140px;
+}
+.uk-dropdown, .uk-dropdown li,.uk-dropdown>li>a {
+  padding: 0 !important;
+}
+.uk-dropdown li a {
+  padding: 1.4em 1em 0 1em;
+}
+.uk-dropdown ul:last-child {
+  padding-bottom: 1.4em;
+}
+ul.uk-nav-sub {
+padding: 0 0 0 1em;
+}
+#home {
+  /* top: 120px; */
+  width: 100%;
+}
+
+#name-overlay  {
+  position: fixed;
+  z-index: 1 !important;
+  top: 8em;
+  margin: 0 0 0 3%;
+  float: left;
+  width: 30%;
+  height: auto;
+  animation-duration: 2s;
+}
+.name {
+
+}
+.voice {
+  color: grey;
+  position: relative;
+  left: 9em;
+}
+.head-shot  {/* image */
+  float: left;
+  width: 100%;
+  height: auto;
+}
+
+.home-content {
+  float: left;
+  width: 60%;
+  padding: 10% 0 0 5%;
+  text-align: right;
+}
+.heading {
+  padding: 1em 0 1em 0;
+}
+
+.article {
+  /* -webkit-transform: translate3d(0,0,0); */
+  position: relative;
+  z-index: 2 !important;
+  min-height: 300px;
+  padding: 2em 8em 7em 8em;
+
+  /* max-width: 100%; */
+  background-color: white;
+  /* margin-bottom: 100px; */
+  /* -webkit-transform: translateZ(-1px); */
+  /* transform: translateZ(-1px); */
+}
+.uk-slider-items:not(.uk-grid) {
+  display: block;
+}
+.slider-box {
+  width:33%;
+}
+.uk-card-media-top {
+
+}
+.slider-box img {
+  display: block;
+  width: 70%;
+  margin: auto;
+  padding: 1em 0;
+}
+.uk-slider-container {
+height: 110vh;
+}
+.uk-slider-items {
+      /* ????? */
+    will-change: transform;
+    position: relative;
+    height: 400px;
+}
+.uk-card-default {
+background: transparent;
+}
+.uk-card-body {
+    padding: 1em .6em;
+}
+.uk-card-default .uk-card-title {
+ text-align: center;
+}
+.uk-card-primary.uk-card-body .uk-slidenav:focus, .uk-card-primary.uk-card-body .uk-slidenav:hover, .uk-card-primary > :not([class*="uk-card-media"]) .uk-slidenav:focus, .uk-card-primary > :not([class*="uk-card-media"]) .uk-slidenav:hover, .uk-card-secondary.uk-card-body .uk-slidenav:focus, .uk-card-secondary.uk-card-body .uk-slidenav:hover, .uk-card-secondary > :not([class*="uk-card-media"]) .uk-slidenav:focus, .uk-card-secondary > :not([class*="uk-card-media"]) .uk-slidenav:hover, .uk-light .uk-slidenav:focus, .uk-light .uk-slidenav:hover, .uk-offcanvas-bar .uk-slidenav:focus, .uk-offcanvas-bar .uk-slidenav:hover, .uk-overlay-primary .uk-slidenav:focus, .uk-overlay-primary .uk-slidenav:hover, .uk-section-primary:not(.uk-preserve-color) .uk-slidenav:focus, .uk-section-primary:not(.uk-preserve-color) .uk-slidenav:hover, .uk-section-secondary:not(.uk-preserve-color) .uk-slidenav:focus, .uk-section-secondary:not(.uk-preserve-color) .uk-slidenav:hover, .uk-tile-primary:not(.uk-preserve-color) .uk-slidenav:focus, .uk-tile-primary:not(.uk-preserve-color) .uk-slidenav:hover, .uk-tile-secondary:not(.uk-preserve-color) .uk-slidenav:focus, .uk-tile-secondary:not(.uk-preserve-color) .uk-slidenav:hover {
+
+    color: rgb(120, 6, 6);
+
+}
+
+/* crazy overrides for nav arrows on slider!! */
+.uk-card-primary.uk-card-body .uk-slidenav, .uk-card-primary>:not([class*=uk-card-media]) .uk-slidenav, .uk-card-secondary.uk-card-body .uk-slidenav, .uk-card-secondary>:not([class*=uk-card-media]) .uk-slidenav, .uk-light .uk-slidenav, .uk-offcanvas-bar .uk-slidenav, .uk-overlay-primary .uk-slidenav, .uk-section-primary:not(.uk-preserve-color) .uk-slidenav, .uk-section-secondary:not(.uk-preserve-color) .uk-slidenav, .uk-tile-primary:not(.uk-preserve-color) .uk-slidenav, .uk-tile-secondary:not(.uk-preserve-color)  {
+  color:  rgba(120, 6, 6, 0.1);
+}
+/* .uk-card-primary.uk-card-body .uk-slidenav:focus, .uk-card-primary.uk-card-body .uk-slidenav:hover, .uk-card-primary > :not([class*="uk-card-media"]) .uk-slidenav:focus, .uk-card-primary > :not([class*="uk-card-media"]) .uk-slidenav:hover, .uk-card-secondary.uk-card-body .uk-slidenav:focus, .uk-card-secondary.uk-card-body .uk-slidenav:hover, .uk-card-secondary > :not([class*="uk-card-media"]) .uk-slidenav:focus, .uk-card-secondary > :not([class*="uk-card-media"]) .uk-slidenav:hover, .uk-light .uk-slidenav:focus, .uk-light .uk-slidenav:hover, .uk-offcanvas-bar .uk-slidenav:focus, .uk-offcanvas-bar .uk-slidenav:hover, .uk-overlay-primary .uk-slidenav:focus, .uk-overlay-primary .uk-slidenav:hover, .uk-section-primary:not(.uk-preserve-color) .uk-slidenav:focus, .uk-section-primary:not(.uk-preserve-color) .uk-slidenav:hover, .uk-section-secondary:not(.uk-preserve-color) .uk-slidenav:focus, .uk-section-secondary:not(.uk-preserve-color) .uk-slidenav:hover, .uk-tile-primary:not(.uk-preserve-color) .uk-slidenav:focus, .uk-tile-primary:not(.uk-preserve-color) .uk-slidenav:hover, .uk-tile-secondary:not(.uk-preserve-color) .uk-slidenav:focus, .uk-tile-secondary:not(.uk-preserve-color) .uk-slidenav:hover {*/
+    /* color:  rgb(124, 3, 15); */
+/* }  */
+
+h1[id*="-heading"] {
+  text-transform: uppercase;
+  width: 50%;
+  border-bottom: 2px solid rgb(95, 17, 26);
+  padding: 1em 0;
+}
+h1[id*="-heading"]:after {
+  z-index: -99;
+  position: absolute;
+  display: inline-block;
+
+  font-size: 5em;
+  color: white;
+  right: 1vw;
+  bottom: -3vh;
+  background-color: rgba(95, 17, 26, 0.2);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0px 3px 3px rgba(255,255,255,0.9);
+}
+#bio-heading:after {
+  content: "ABOUT";
+}
+#calendar-heading:after {
+  content: "PEFORMANCES";
+}
+#media-heading:after {
+  content: "MEDIA";
+}
+#contact-heading:after {
+  content: "CONTACT";
+}
+#blog-heading:after {
+  content: "BLOG";
+}
+[id*="-anchor"] {
+  display: block;
+  position: relative;
+  top: -100px;
+  height: 1px;
+}
+/* condense these using * */
+
+#bio, #calendar, #upcoming, #past, #media, #contact, #blog {
+}
+
+#calendar {
+  /* display: grid; */
+  /* grid-template-areas: */
+    /* "area-1" */
+    /* "area-2"; */
+  /* grid-template-rows: 1fr; */
+  /* grid-template-columns: 1fr 1fr; */
+}
+#upcoming {
+  grid-area: area-1;
+}
+#past {
+  grid-area: area-2;
+}
+
+/* ================ PARALLAX STYLES ================ */
+
+[class*="parallax"]  {
+
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-perspective: 1px;
+  perspective: 1px;
+  opacity: 0.3;
+  filter: alpha(opacity=30); /* For IE8 and earlier */
+  /* height: 90%; */
+  /* scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation-duration: 3s;
+}
+.parallax1  {
+  opacity: 1;
+  background-position: right;
+}
+.parallax1 {
+  /* background image */
+  background-image: url("../images/hero_1.2.jpg");
+
+}
+.parallax2 {
+  /* background image */
+  background-image: url("../images/operaHouse1.png");
+
+
+}
+.parallax3 {
+  /* background image */
+  background-image: url("../images/copenhagenOpera.png");
+
+}
+.parallax4 {
+  /* background image */
+  background-image: url("../images/7207237440.png");
+
+}
+
+/* =========== MEDIA QUERIES =============== */
+@media screen and (max-width: 960px){
+  #navbar {
+    display: none;
+  }
+  #mobile-menu {
+  }
+  a#mobile-menu-link {
+    color: black;
+    display: block;
+    padding: 2em;
+    transition: 1s;
+  }
+  a#mobile-menu-link:hover {
+    color: rgb(124, 3, 15);
+    transition: 1s;
+  }
+  .uk-nav>li>a {
+  float: none;
+  }
+  .parallax1  {
+    /* width: 140%; */
+    background-position: right -3em center;
+  }
+  .article  {
+    padding: 2em;
+  }
+  #logo {
+    display: none;
+  }
+  #name-overlay  {
+    position: absolute;
+    right: 5em;
+    /* position: fixed; */
+    /* right: 25%; */
+    top: 0em;
+    z-index: 5 !important;
+  }
+  .voice {
+    color: grey;
+    position: relative;
+    left: 2.5em;
+  }
+  .uk-offcanvas-bar {
+    width: 240px;
+  }
+  .slider-box {
+    width:50%;
+  }
+
+  .slider-box img {
+    width: 85%;
+  }
+
+}
+
+@media screen and (max-width: 760px){
+  .home-content {
+    clear: both;
+    padding: 0;
+    text-align: left;
+  }
+}
+
+@media all and (max-width: 600px) {
+
+  .container {
+    flex-wrap: wrap;
+  }
+
+  .container > li {
+    flex-basis: 50%;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .container > li {
+    flex-basis: 100%;
+  }
+  .search {
+    order: 1;
+  }
+}

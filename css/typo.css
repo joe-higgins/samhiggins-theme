@@ -1,0 +1,36 @@
+body  {
+  color:inherit;
+  font-family: Avenir, Arial, sans-serif;
+
+}
+
+p {
+  font-size: 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1em;
+    /* font-family: inherit; */
+    /* font-weight: 500; */
+    /* line-height: 1.4em; */
+    /* color: inherit; */
+}
+/* from w3.css Are em's or rem's better?*/
+h1{
+    font-size:1.8em;
+}
+h2{
+    font-size:1.6em;
+}
+h3{
+    font-size:1.4em;
+}
+h4{
+    font-size:1.2em;
+}
+h5{
+    font-size:1em;
+}
+h6{
+    font-size:1em;
+}
