@@ -343,23 +343,23 @@ h1[id*="-heading"]:after {
 }
 .parallax1 {
   /* background image */
-  background-image: url("../images/hero_1.2.jpg");
+  background-image: url("images/hero_1.2.jpg");
 
 }
 .parallax2 {
   /* background image */
-  background-image: url("../images/operaHouse1.png");
+  background-image: url("images/operaHouse1.png");
 
 
 }
 .parallax3 {
   /* background image */
-  background-image: url("../images/copenhagenOpera.png");
+  background-image: url("images/copenhagenOpera.png");
 
 }
 .parallax4 {
   /* background image */
-  background-image: url("../images/7207237440.png");
+  background-image: url("images/7207237440.png");
 
 }
 

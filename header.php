@@ -36,13 +36,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.2/js/uikit-icons.min.js"></script>
 
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo get_bloginfo('template_directory'); ?>/style.css">
     <title>Sam Higgins - Countertenor</title>
+    <?php wp_head(); ?>
   </head>
   <body>
     <div id="name-overlay" class="uk-animation-fade uk-animation-slide-left uk-animation-15">
       <div class="name">
-        <img src="images/sam_higgins.png" alt="Sam Higgins">
+        <img src="<?php bloginfo('template_url'); ?>/images/sam_higgins.png" alt="Sam Higgins">
         <!-- <h1 class="first-name"><b>SAM</b></h1>
         <h1 class="last-name">HIGGINS</h1> -->
         <h3 class="voice">Countertenor</h3>
