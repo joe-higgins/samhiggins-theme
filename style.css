@@ -17,6 +17,7 @@ This theme is licensed under the GPL.
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
+/* FOR TESTING */
 
 /* Updated 2/3/19 */
 
@@ -83,12 +84,12 @@ em {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c2ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
 }
 
-#logo, #navbar {
+#signature-logo, #navbar {
   display: inline-block;
   vertical-align: middle;
 
 }
-#logo {
+#signature-logo {
   position: relative;
   z-index: 4
   float: left;
@@ -214,6 +215,7 @@ padding: 0 0 0 1em;
 .slider-box {
   width:33%;
 }
+
 .uk-card-media-top {
 
 }
@@ -255,6 +257,16 @@ background: transparent;
     /* color:  rgb(124, 3, 15); */
 /* }  */
 
+
+/* Blog code */
+
+.blog-slider-box {
+  width: 50%;
+  height: 100%;
+}
+.blog-post-title, .blog-post-met {
+  float: left;
+}
 h1[id*="-heading"] {
   text-transform: uppercase;
   width: 50%;

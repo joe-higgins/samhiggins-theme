@@ -2,20 +2,19 @@
 /**
  * The header for our theme
  *
- * This is the template that displays all of the <head> section and everything up until <div id="home">
+ * This is the template that displays all of the <head> section and everything up until <div id="content">
  *
- * @link http://joehiggins.me
+ * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package WordPress
- * @subpackage samhiggins-theme
- * @since 1.0.0
+ * @package samhiggins-theme
  */
 ?>
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" lang="en" content="text/html">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="<?php bloginfo( 'charset' ); ?>">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="profile" href="https://gmpg.org/xfn/11">
 <!-- TEMPORARY UPDATE BEFORE LAUNCH -->
     <!-- OGG data -->
     <!-- facebook -->
@@ -41,19 +40,9 @@
     <?php wp_head(); ?>
   </head>
   <body>
-    <div id="name-overlay" class="uk-animation-fade uk-animation-slide-left uk-animation-15">
-      <div class="name">
-        <img src="<?php bloginfo('template_url'); ?>/images/sam_higgins.png" alt="Sam Higgins">
-        <!-- <h1 class="first-name"><b>SAM</b></h1>
-        <h1 class="last-name">HIGGINS</h1> -->
-        <h3 class="voice">Countertenor</h3>
-      </div>
-    </div>
-    <!-- begin nav -->
     <header id="header">
-
-      <div id="logo" class="uk-animation-fade"><img src="images/logo.png" alt="LOGO"></div>
-
+      <div id="signature-logo" class="uk-animation-fade"><img src="<?php bloginfo('template_url'); ?>/images/signature-logo.png" alt="LOGO"></div>
+      <!-- begin nav -->
       <!-- +++++++++++ MOBILE MENU +++++++++++++++++++++ -->
       <!-- +++++++++++ HIDDEN ABOVE 980px  +++++++++++++++++++ -->
 
@@ -132,7 +121,3 @@
     </header>
 
     <!-- end main nav -->
-
-
-    <!-- begin page 1 -->
-    <div id="home"></div>

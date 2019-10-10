@@ -16,24 +16,27 @@
 
 get_header();
 ?>
-
-<!-- page 2 -->
+<!-- Sam Higgins logo -->
+<?php
+      get_template_part('template-parts/logo');
+?>
+<!-- About/Bio -->
 <?php
       get_template_part('template-parts/bio');
 ?>
-<!-- page 3 -->
+<!-- Scedule/Performances -->
 <?php
       get_template_part('template-parts/schedule');
 ?>
-<!-- page 4 -->
+<!-- Videos/News -->
 <?php
       get_template_part('template-parts/media');
 ?>
-<!-- page 5 -->
+<!-- Contact -->
 <?php
       get_template_part('template-parts/contact');
 ?>
-<!-- page 6 -->
+<!-- Blog -->
 <?php
       get_template_part('template-parts/blog');
 ?>
