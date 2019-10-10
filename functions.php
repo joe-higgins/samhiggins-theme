@@ -7,6 +7,11 @@
  * @package samhiggins-theme
  */
 
+ // ============= Functions added by Joe Higgins  ==============
+
+
+ // =========  Underscores added functions  ============
+
 if ( ! function_exists( 'samhiggins_theme_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
