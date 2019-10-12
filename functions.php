@@ -9,8 +9,6 @@
 
  // ============= Functions added by Joe Higgins  ==============
 
-
-
  /**
   * Register our sidebars and widgetized areas.
   *
@@ -20,6 +18,30 @@
  	register_sidebar( array(
  		'name'          => 'Parallax 2 Widget Area 1',
  		'id'            => 'para2-widget-1',
+ 		'before_widget' => '<div>',
+ 		'after_widget'  => '</div>',
+ 		'before_title'  => '<h2 class="rounded">',
+ 		'after_title'   => '</h2>',
+ 	) );
+  register_sidebar( array(
+ 		'name'          => 'Parallax 2 Widget Area 2',
+ 		'id'            => 'para2-widget-2',
+ 		'before_widget' => '<div>',
+ 		'after_widget'  => '</div>',
+ 		'before_title'  => '<h2 class="rounded">',
+ 		'after_title'   => '</h2>',
+ 	) );
+  register_sidebar( array(
+ 		'name'          => 'Media Widget Area 1',
+ 		'id'            => 'media-widget-1',
+ 		'before_widget' => '<div>',
+ 		'after_widget'  => '</div>',
+ 		'before_title'  => '<h2 class="rounded">',
+ 		'after_title'   => '</h2>',
+ 	) );
+  register_sidebar( array(
+ 		'name'          => 'Media Widget Area 2',
+ 		'id'            => 'media-widget-2',
  		'before_widget' => '<div>',
  		'after_widget'  => '</div>',
  		'before_title'  => '<h2 class="rounded">',

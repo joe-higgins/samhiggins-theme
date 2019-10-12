@@ -27,7 +27,10 @@
     <meta name="twitter:description" content=" Offering tour packages for individuals or groups.">
     <meta name="twitter:image" content=" http://euro-travel-example.com/thumbnail.jpg">
     <meta name="twitter:card" content="summary_large_image">
-
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
     <!-- UIkit CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.2/css/uikit.min.css" />
     <!-- UIkit JS -->

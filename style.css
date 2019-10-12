@@ -209,6 +209,15 @@ padding: 0 0 0 1em;
   /* -webkit-transform: translateZ(-1px); */
   /* transform: translateZ(-1px); */
 }
+/* ==== Slide Anything styles ====== */
+.owl-item {
+  margin: 3rem;
+  /* background: #fff; */
+  /* color: #666; */
+  box-shadow: 0 5px 15px rgba(0,0,0,.08);
+}
+
+/* ====== UK slider styles =========== */
 .uk-slider-items:not(.uk-grid) {
   display: block;
 }
@@ -226,7 +235,7 @@ padding: 0 0 0 1em;
   padding: 1em 0;
 }
 .uk-slider-container {
-height: 110vh;
+/* height: 110vh; */
 }
 .uk-slider-items {
       /* ????? */
@@ -264,7 +273,7 @@ background: transparent;
   width: 50%;
   height: 100%;
 }
-.blog-post-title, .blog-post-met {
+.blog-post-title, .blog-post-meta {
   float: left;
 }
 h1[id*="-heading"] {

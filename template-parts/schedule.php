@@ -8,9 +8,11 @@
   <h1 id="calendar-heading" class="heading"><?php echo get_theme_mod('parallax2-heading'); ?></h1>
   <div id="calendar">
     <div id="upcoming-anchor"></div>
+
     <div id="upcoming" uk-scrollspy="cls: uk-animation-slide-right; repeat: true delay: 500">
+      <div><?php dynamic_sidebar( 'para2-widget-1' ); ?></div>
       <h1 class="heading">Upcoming Performances</h1>
-      <?php dynamic_sidebar( 'para2-widget-1' ); ?>
+
       <div class="slider">
         <div class="slider-box">
           <h3>Friday February 22, 2019</h3>
@@ -26,8 +28,11 @@
   </div>
   <!-- end Upcoming -->
 <div id="past-anchor"></div>
+
 <div id="past" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+  <div><?php dynamic_sidebar( 'para2-widget-2' ); ?></div>
   <h1 class="heading">Past Performances</h1>
+
   <div uk-slider="center: true">
   <div class="sliderv uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
 
