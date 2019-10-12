@@ -1,13 +1,16 @@
 <!-- begin page 3 -->
-<div class="parallax2"></div>
+<div class="parallax2">
+  <h3 class="overlay"><?php echo get_theme_mod('parallax2-text'); ?></h3>
+</div>
 
 <div id="calendar-anchor"></div>
 <article class="article">
-  <h1 id="calendar-heading" class="heading">Performances</h1>
+  <h1 id="calendar-heading" class="heading"><?php echo get_theme_mod('parallax2-heading'); ?></h1>
   <div id="calendar">
     <div id="upcoming-anchor"></div>
     <div id="upcoming" uk-scrollspy="cls: uk-animation-slide-right; repeat: true delay: 500">
       <h1 class="heading">Upcoming Performances</h1>
+      <?php dynamic_sidebar( 'para2-widget-1' ); ?>
       <div class="slider">
         <div class="slider-box">
           <h3>Friday February 22, 2019</h3>

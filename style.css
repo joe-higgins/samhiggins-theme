@@ -329,7 +329,15 @@ h1[id*="-heading"]:after {
 #past {
   grid-area: area-2;
 }
-
+.overlay {
+  color: white;
+  font-style: italic;
+  font-weight: 700;
+  z-index: 99;
+  position: relative;
+  top: 90vh;
+  left: 7vw;
+}
 /* ================ PARALLAX STYLES ================ */
 
 [class*="parallax"]  {

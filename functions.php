@@ -10,6 +10,26 @@
  // ============= Functions added by Joe Higgins  ==============
 
 
+
+ /**
+  * Register our sidebars and widgetized areas.
+  *
+  */
+ function arphabet_widgets_init() {
+
+ 	register_sidebar( array(
+ 		'name'          => 'Parallax 2 Widget Area 1',
+ 		'id'            => 'para2-widget-1',
+ 		'before_widget' => '<div>',
+ 		'after_widget'  => '</div>',
+ 		'before_title'  => '<h2 class="rounded">',
+ 		'after_title'   => '</h2>',
+ 	) );
+
+ }
+ add_action( 'widgets_init', 'arphabet_widgets_init' );
+
+
  // =========  Underscores added functions  ============
 
 if ( ! function_exists( 'samhiggins_theme_setup' ) ) :
