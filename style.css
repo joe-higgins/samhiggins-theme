@@ -273,8 +273,14 @@ background: transparent;
   width: 50%;
   height: 100%;
 }
-.blog-post-title, .blog-post-meta {
+.blog-post-title {
   float: left;
+  margin: 0;
+}
+.blog-post-meta {
+  float: right;
+  padding: 0;
+
 }
 h1[id*="-heading"] {
   text-transform: uppercase;
