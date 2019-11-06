@@ -162,3 +162,60 @@ function sjh_parallax2_bg_image()
 <?php
 }
 add_action( 'wp_head', 'sjh_parallax2_bg_image');
+
+// Third parallax has 1 text area and background image
+function sjh_add_parallax3($wp_customize) {
+	$wp_customize->add_section('parallax3-section', array(
+		'title'		=> 'Third Parallax Section'
+	));
+	$wp_customize->add_setting('parallax3-text', array(
+		'default'	=> 'Display text'
+	));
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize,'parallax3-text-control', array(
+		'label'			=> 'Text to display over parallax 3 image',
+		'section' 	=>	'parallax3-section',
+		'settings'	=>	'parallax3-text'
+	)));
+	$wp_customize->add_setting('parallax3-heading', array(
+		'default' 	=>  'Add heading for parallax 3 section'
+	));
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'parallax3-heading-control', array(
+		'label'  =>  'Add heading for parallax 3 section',
+		'section' 	=>	'parallax3-section',
+		'settings'	=>	'parallax3-heading'
+	)));
+	$wp_customize->add_setting('parallax2-tagline', array(
+		'default'		=> 'Parallax 3 tagline'
+	));
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'parallax3-tagline-control', array(
+		'label'  =>  'Add tagline for parallax 3 section',
+		'section' 	=>	'parallax3-section',
+		'settings'	=>	'parallax3-tagline',
+		'type'			=> 	'textarea'
+	)));
+	$wp_customize->add_setting('parallax3-image', array(
+		'default'	=> 'Image'
+	));
+	$wp_customize->add_control(new WP_Customize_Cropped_Image_Control($wp_customize,'parallax3-image-control', array(
+		'label'			=> 'Add parallax background image',
+		'section' 	=>	'parallax3-section',
+		'settings'	=>	'parallax3-image',
+		'width'			=>	3000,
+		'flex_width'	=> true,
+		'flex_height'	=> true
+	)));
+
+}
+add_action('customize_register', 'sjh_add_parallax3');
+
+function sjh_parallax3_bg_image()
+{
+?>
+    <style type="text/css">
+        .parallax3 {
+            background-image: url('<?php echo wp_get_attachment_url(get_theme_mod( 'parallax3-image' ));?>');
+        }
+    </style>
+<?php
+}
+add_action( 'wp_head', 'sjh_parallax3_bg_image');
