@@ -85,8 +85,9 @@ function sjh_add_parallax1($wp_customize) {
 		'label'			=> 'Add parallax background image',
 		'section' 	=>	'parallax1-section',
 		'settings'	=>	'parallax1-image',
-		'width'			=>	1200,
-		'flex_width'	=> true
+		'width'			=>	3000,
+		'flex_width'	=> true,
+		'flex_height'	=> true
 	)));
 
 }
@@ -114,7 +115,7 @@ function sjh_add_parallax2($wp_customize) {
 		'default'	=> 'Display text'
 	));
 	$wp_customize->add_control(new WP_Customize_Control($wp_customize,'parallax2-text-control', array(
-		'label'			=> 'Text to diplay over parallax 2 image',
+		'label'			=> 'Text to display over parallax 2 image',
 		'section' 	=>	'parallax2-section',
 		'settings'	=>	'parallax2-text'
 	)));
@@ -138,12 +139,13 @@ function sjh_add_parallax2($wp_customize) {
 	$wp_customize->add_setting('parallax2-image', array(
 		'default'	=> 'Image'
 	));
-	$wp_customize->add_control(new WP_Customize_Cropped_Image_Control($wp_customize,'parallax1-image-control', array(
+	$wp_customize->add_control(new WP_Customize_Cropped_Image_Control($wp_customize,'parallax2-image-control', array(
 		'label'			=> 'Add parallax background image',
 		'section' 	=>	'parallax2-section',
 		'settings'	=>	'parallax2-image',
-		'width'			=>	1200,
-		'flex_width'	=> true
+		'width'			=>	3000,
+		'flex_width'	=> true,
+		'flex_height'	=> true
 	)));
 
 }
