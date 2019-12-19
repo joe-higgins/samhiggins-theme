@@ -91,12 +91,11 @@ em {
 }
 #signature-logo {
   position: relative;
-  z-index: 4
+  z-index: 4;
   float: left;
   margin: .5em 3em;
   width: 80px;
   /* height: 110px; */
-  float: left;
   object-fit: cover;
   animation-duration: 2s;
 }
@@ -210,6 +209,17 @@ padding: 0 0 0 1em;
   /* transform: translateZ(-1px); */
 }
 /* ==== Slide Anything styles ====== */
+/* div .owl-carousel .owl-stage-outer {
+    width: 110vw !important;
+	height: 100vh !important;
+} */
+/* 	force owl-stage width so that 8 slides will fit without wrapping */
+.owl-stage {
+	width: 10000px !important;
+}
+#past_performances .owl-item {
+/* 	height: 50vh; */
+}
 .owl-item {
   margin: 3rem;
   /* background: #fff; */
