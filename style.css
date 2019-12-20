@@ -209,11 +209,11 @@ padding: 0 0 0 1em;
   /* transform: translateZ(-1px); */
 }
 /* ==== Slide Anything styles ====== */
-/* div .owl-carousel .owl-stage-outer {
-    width: 110vw !important;
-	height: 100vh !important;
-} */
-/* 	force owl-stage width so that 8 slides will fit without wrapping */
+div .owl-carousel .owl-stage-outer {
+    width: 90vw !important;
+	/* height: 100vh !important; */
+}
+/* 	force owl-stage width so that 8 slides will fit without wrapping.  */
 .owl-stage {
 	width: 10000px !important;
 }
@@ -221,12 +221,18 @@ padding: 0 0 0 1em;
 /* 	height: 50vh; */
 }
 .owl-item {
-  margin: 3rem;
+  margin: 1rem;
+  min-height: 32rem !important;
   /* background: #fff; */
   /* color: #666; */
   box-shadow: 0 5px 15px rgba(0,0,0,.08);
 }
-
+.sa_hover_container>div>div {
+  height: 6rem;
+}
+#past_performances .owl-item, #upcoming_performances .owl-item, #videos .owl-item {
+  margin: 0px auto !important;
+}
 /* ====== UK slider styles =========== */
 .uk-slider-items:not(.uk-grid) {
   display: block;
@@ -353,6 +359,8 @@ h1[id*="-heading"]:after {
 }
 #past {
   grid-area: area-2;
+  /* padding to prevent "PERFORMANCES" text from getting cut off */
+  padding: 1rem 0;
 }
 .overlay {
   color: white;
