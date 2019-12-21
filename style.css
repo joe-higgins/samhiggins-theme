@@ -210,28 +210,33 @@ padding: 0 0 0 1em;
 }
 /* ==== Slide Anything styles ====== */
 div .owl-carousel .owl-stage-outer {
-    width: 90vw !important;
-	/* height: 100vh !important; */
+    /* width: 90vw !important; */
 }
 /* 	force owl-stage width so that 8 slides will fit without wrapping.  */
 .owl-stage {
 	width: 10000px !important;
 }
-#past_performances .owl-item {
-/* 	height: 50vh; */
-}
+
 .owl-item {
-  margin: 1rem;
-  min-height: 32rem !important;
-  /* background: #fff; */
-  /* color: #666; */
+  /* margin: 1rem; */
+  /* min-height: 32rem !important; */
+  /* box-shadow: 0 5px 15px rgba(0,0,0,.08); */
+}
+.sa_hover_container {
+  min-height: 26rem !important;
+  margin:  0 1rem !important;
   box-shadow: 0 5px 15px rgba(0,0,0,.08);
 }
+.owl-item img {
+  /* height: 6rem !important; */
+}
 .sa_hover_container>div>div {
-  height: 6rem;
+  height: 4rem !important;
 }
 #past_performances .owl-item, #upcoming_performances .owl-item, #videos .owl-item {
-  margin: 0px auto !important;
+  /* min-height: 32rem !important; */
+  /* box-shadow: 0 5px 15px rgba(0,0,0,.08); */
+  /* margin: 0px auto !important; */
 }
 /* ====== UK slider styles =========== */
 .uk-slider-items:not(.uk-grid) {
